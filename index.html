@@ -3,8 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/style2.css" />
-		<script defer src="/script.js"></script>
+		<link rel="stylesheet" href="/style2.min.css" />
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+		<script defer src="/script.min.js" type="module"></script>
+
 		<title>Shawn Matyasovszky | Web Developer</title>
 	</head>
 	<body>
@@ -92,6 +100,32 @@
 						>
 					</p>
 				</div>
+
+				<div class="section-content-container">
+					<h3 class="section-sub-header">JC-Music.com</h3>
+					<p>
+						JC-Music.com is a wordpress site based on the Shopify theme. It uses
+						WooCommerce as it's ecommerce solution, with which it sells a variety of
+						musical goods and services. The site has gone through several designs
+						and maintainers over the company's history. As it's current maintainer,
+						I have implemented new functionality, as well as stylistic and
+						performance tweaks.
+					</p>
+					<p>
+						<a href="https://www.jc-music.com" target="blank">View live site</a>
+					</p>
+				</div>
+
+				<div class="section-content-container">
+					<h3 class="section-sub-header">FortRocks.com</h3>
+					<p>
+						FortRocks.com is a wordpress site based on the Storefront theme. It uses
+						WooCommerce as it's ecommerce solution
+					</p>
+					<p>
+						<a href="https://www.fortrocks.com" target="blank">View live site</a>
+					</p>
+				</div>
 			</section>
 			<div class="spacer"></div>
 			<section id="certifications">
@@ -156,27 +190,13 @@
 				</div>
 			</section>
 			<div class="spacer"></div>
-
 			<section id="reviews">
 				<div class="section-title-container">
 					<h2 class="section-title">Reviews</h2>
 				</div>
 
 				<div class="section-content-container">
-					<h3 class="section-sub-header">Lorem Ipsum</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-						atque! Quo repellat quas quae doloribus dolore reiciendis incidunt! Quae
-						cum nostrum laborum iste consequatur quia iusto enim ipsam labore nobis.
-					</p>
-				</div>
-				<div class="section-content-container">
-					<h3 class="section-sub-header">Lorem Ipsum</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-						atque! Quo repellat quas quae doloribus dolore reiciendis incidunt! Quae
-						cum nostrum laborum iste consequatur quia iusto enim ipsam labore nobis.
-					</p>
+					<h3 class="section-sub-header">Check back soon!</h3>
 				</div>
 			</section>
 			<div class="spacer"></div>
@@ -206,7 +226,6 @@
 							placeholder="Hello!"
 						></textarea>
 					</div>
-					<div class="input-group"></div>
 					<div class="submit-container">
 						<input id="form_contact_submit" type="submit" class="btn" />
 					</div>

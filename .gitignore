@@ -9,6 +9,11 @@ todo.txt
 # Firebase cache
 .firebase/
 firebase.json
+database.rules.json
+storage.rules
+firestore.rules
+firestore.indexes.json
+firebase_config.js
 # Firebase config
 
 # Uncomment this if you'd like others to create their own Firebase project.
