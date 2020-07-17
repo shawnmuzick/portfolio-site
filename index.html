@@ -10,7 +10,7 @@
 		<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-
+		<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
 		<script defer src="/script.min.js" type="module"></script>
 
 		<title>Shawn Matyasovszky | Web Developer</title>
@@ -207,12 +207,20 @@
 						<h2 class="section-title">Contact</h2>
 					</div>
 					<div class="input-group">
+						<div id="form_contact_error"></div>
+					</div>
+					<div class="input-group">
 						<label for="contact_name">Name: </label
-						><input type="text" id="contact_name" placeholder="John Doe" />
+						><input required type="text" id="contact_name" placeholder="John Doe" />
 					</div>
 					<div class="input-group">
 						<label for="contact_email">Email: </label>
-						<input id="contact_email" type="email" placeholder="email@email.com" />
+						<input
+							required
+							id="contact_email"
+							type="email"
+							placeholder="email@email.com"
+						/>
 					</div>
 					<div class="input-group">
 						<label for="contact_organization">Organization (Optional): </label
@@ -224,7 +232,12 @@
 							class="textarea"
 							id="contact_message"
 							placeholder="Hello!"
+							required
 						></textarea>
+					</div>
+
+					<div class="input-group">
+						<div id="recaptcha-container"></div>
 					</div>
 					<div class="submit-container">
 						<input id="form_contact_submit" type="submit" class="btn" />

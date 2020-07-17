@@ -259,6 +259,13 @@ section {
 .social-links img:hover{
 	border: solid 2px var(--hover-highlight-color);
 }
+#form_contact_error{
+	background-color: rgb(255, 45, 45);
+	padding: 10px;
+	border-radius: var(--rounded-corners);
+	text-align: center;
+	display: none;
+}
 @media screen and (min-height: 731px){
 	.site-title-container{
 		height: 20vh;
