@@ -164,6 +164,7 @@ section {
 	flex-direction: column;
 	background-color: rgba(46, 46, 46, 0.74);
 	width: 100%;
+	height: 40vh;
 }
 .landing-content-image {
 	display: flex;
@@ -172,7 +173,7 @@ section {
 	height: auto;
 	padding: 10px;
 	border-radius: 50%;
-	margin: 50px 0px 50px 0px;
+	margin: auto;
 }
 .landing-menu {
 	display: flex;
@@ -193,12 +194,15 @@ section {
 	color: var(--header-color);
 	text-decoration: none;
 }
-.landing-menu-item a:visited, a:visited,a {
+.landing-menu-item a:visited,
+a:visited,
+a {
 	color: var(--header-color);
 	text-decoration: none;
 }
 .landing-menu-item:hover,
-.landing-menu-item a:hover, a:hover {
+.landing-menu-item a:hover,
+a:hover {
 	-webkit-text-stroke-color: var(--hover-highlight-color);
 	-webkit-text-stroke-width: 1px;
 	stroke-width: 1px;
@@ -256,24 +260,24 @@ section {
 	border: solid 2px var(--header-color);
 	border-radius: 50%;
 }
-.social-links img:hover{
+.social-links img:hover {
 	border: solid 2px var(--hover-highlight-color);
 }
-#form_contact_error{
+#form_contact_error {
 	background-color: rgb(255, 45, 45);
 	padding: 10px;
 	border-radius: var(--rounded-corners);
 	text-align: center;
 	display: none;
 }
-@media screen and (min-height: 731px){
-	.site-title-container{
+@media screen and (min-height: 731px) {
+	.site-title-container {
 		height: 20vh;
 	}
-	.landing-content-container{
+	.landing-content-container {
 		height: 80vh;
 	}
-	.landing-content-image{
+	.landing-content-image {
 		width: 60vw;
 	}
 }
@@ -282,7 +286,6 @@ section {
 	.site-title-container {
 		height: 100px;
 	}
-	
 	.social-links {
 		padding: 0px 0px 10px 0px;
 	}
@@ -300,14 +303,14 @@ section {
 	.landing-content-image {
 		flex-grow: unset;
 		height: auto;
-		margin: 20px 0px 20px 0px;
 	}
-	.landing-content-text {
-		flex-grow: 1;
+	#recaptcha-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media screen and (min-width: 375px) {
-	
 }
 @media screen and (min-width: 411px) {
 	form {
@@ -322,14 +325,12 @@ section {
 	.site-title-container {
 		height: 200px;
 	}
-	
 }
 
 @media screen and (min-height: 812px) {
 	.site-title-container {
 		height: 200px;
 	}
-	
 }
 
 /* ipads */
@@ -388,6 +389,7 @@ section {
 		margin: 0px;
 		justify-content: center;
 		align-items: center;
+		padding: 0px;
 	}
 	.landing-menu {
 		display: flex;
@@ -396,8 +398,9 @@ section {
 		align-items: center;
 		background-color: var(--nav-bg-color);
 		width: 100%;
+		padding: 10px;
 	}
-	
+
 	.landing-menu .site-title {
 		display: flex;
 	}
@@ -409,7 +412,7 @@ section {
 		font-size: 1rem;
 		margin-right: 10px;
 	}
-	.landing-content-container .landing-content-text{
+	.landing-content-container .landing-content-text {
 		height: 25vh;
 		flex-grow: unset;
 	}

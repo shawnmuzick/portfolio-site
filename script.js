@@ -11,14 +11,21 @@ const contact_message = document.getElementById('contact_message');
 const captcha = document.getElementById('recaptcha-container');
 const form_contact_error = document.getElementById('form_contact_error');
 let CAPTCHA_VALIDATED = false;
+let CAPTCHA_SIZE = 'normal';
+let VIEWPORT = document.documentElement.clientWidth;
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 firebase.auth();
 const firestore = firebase.firestore();
 const db = firestore.collection('contactData');
+if (VIEWPORT <= 360) {
+	CAPTCHA_SIZE = 'compact';
+}
 
 window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(captcha, {
+	size: CAPTCHA_SIZE,
+	//theme: 'dark',
 	callback: function (response) {
 		CAPTCHA_VALIDATED = true;
 	},
