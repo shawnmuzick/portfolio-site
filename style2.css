@@ -1,10 +1,12 @@
 :root {
-	--btn-bg-color: #ff9900;
-	--main-bg-color: black;
-	--header-text-color: #ff9900;
-	--divider-color: #ff9900;
-	--nav-bg-color: rgb(46, 46, 46);
-	--hover-highlight-color: white;
+	--btn-bg-color: rgb(126, 45, 255);
+	--btn-text-color: white;
+	--main-bg-color: rgb(46, 46, 46);
+	--header-text-color: rgb(255, 255, 255);
+	--section-header-text-color: rgb(126, 45, 255);
+	--divider-color: rgb(126, 45, 255);
+	--nav-bg-color: rgb(36, 36, 36);
+	--hover-highlight-color: rgb(126, 45, 255);
 	--border-rounded-corners: 0.5em;
 	--border-circle: 50%;
 	--header-text-font: 'Noto Sans JP', sans-serif;
@@ -30,6 +32,7 @@ h6 {
 	color: var(--header-text-color);
 	font-family: var(--header-text-font);
 }
+
 p {
 	font-family: var(--body-text-font);
 }
@@ -80,7 +83,7 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background: var(--nav-bg-color);
+	background: var(--main-bg-color);
 	color: white;
 	height: 25vh;
 }
@@ -88,6 +91,11 @@ textarea {
 .mobile-site-title {
 	font-size: 1.5rem;
 	margin: 0px;
+}
+.mobile-site-title {
+	width: 100%;
+	padding: 10px;
+	background-color: var(--divider-color);
 }
 section {
 	display: flex;
@@ -107,7 +115,12 @@ section {
 	align-items: center;
 	color: var(--header-text-color);
 }
-
+.section-sub-header {
+	padding: 5px;
+	text-decoration: underline;
+	text-decoration-color: var(--divider-color);
+	text-decoration-style: double;
+}
 .section-landing {
 	padding: 0px;
 	display: flex;
@@ -152,7 +165,7 @@ section {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-grow: 1;
-	background-image: url('/img/coding-computer-data-depth-of-field-577585.jpg');
+	/* background-image: url('/img/coding-computer-data-depth-of-field-577585.jpg'); */
 	overflow: visible;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -202,9 +215,7 @@ a {
 .landing-menu-item:hover,
 .landing-menu-item a:hover,
 a:hover {
-	-webkit-text-stroke-color: var(--hover-highlight-color);
-	-webkit-text-stroke-width: 1px;
-	stroke-width: 1px;
+	color: var(--hover-highlight-color);
 }
 .submit-container {
 	display: flex;
@@ -215,7 +226,7 @@ a:hover {
 	max-width: 200px;
 	background-color: var(--btn-bg-color);
 	border-radius: var(--border-rounded-corners);
-	color: var(--main-bg-color);
+	color: var(--btn-text-color);
 	font-weight: bold;
 	padding: 10px;
 	margin: 5px;
@@ -223,7 +234,7 @@ a:hover {
 	border: solid 2px var(--btn-bg-color);
 }
 .btn:hover {
-	border: solid 2px var(--hover-highlight-color);
+	border: solid 2px var(--btn-text-color);
 }
 .nav-expand-btn {
 	padding: 5px;
