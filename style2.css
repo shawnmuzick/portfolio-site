@@ -7,7 +7,7 @@
 	--divider-color: rgb(126, 45, 255);
 	--nav-bg-color: rgb(36, 36, 36);
 	--hover-highlight-color: rgb(126, 45, 255);
-	--border-rounded-corners: 0.5em;
+	--border-rounded-corners: 0.3em;
 	--border-circle: 50%;
 	--header-text-font: 'Noto Sans JP', sans-serif;
 	--body-text-font: Arial, Helvetica, sans-serif;
@@ -280,7 +280,9 @@ a:hover {
 	text-align: center;
 	display: none;
 }
-
+.desktop-site-title{
+	display: none;
+}
 @media screen and (min-height: 731px) {
 	.site-title-container {
 		height: 20vh;
@@ -424,6 +426,7 @@ a:hover {
 	.site-title {
 		font-size: 1rem;
 		margin-right: auto;
+		display: none;
 	}
 	li.landing-menu-item {
 		font-size: 1rem;
@@ -432,5 +435,8 @@ a:hover {
 	.landing-content-container .landing-content-text {
 		height: 25vh;
 		flex-grow: unset;
+	}
+	.desktop-site-title{
+		display: block;
 	}
 }
