@@ -244,6 +244,9 @@ a:hover {
 	border-radius: var(--border-circle);
 	transition: 0.5s;
 }
+.nav-expand-btn img{
+	filter: invert(100%);
+}
 .nav-expand-btn:hover {
 	outline: transparent;
 	background-color: var(--btn-bg-color);
