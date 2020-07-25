@@ -79,6 +79,9 @@ textarea {
 	height: 100px;
 	resize: none;
 }
+input:invalid {
+	border: solid 2px var(--btn-bg-color);
+}
 .site-title-container {
 	display: flex;
 	text-align: center;
@@ -283,6 +286,9 @@ a:hover {
 	padding: 10px;
 	border-radius: var(--border-rounded-corners);
 	text-align: center;
+	display: none;
+}
+#error_input_wrapper {
 	display: none;
 }
 .desktop-site-title {

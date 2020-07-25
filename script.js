@@ -10,6 +10,7 @@ const contact_organization = document.getElementById('contact_organization');
 const contact_message = document.getElementById('contact_message');
 const captcha = document.getElementById('recaptcha-container');
 const form_contact_error = document.getElementById('form_contact_error');
+const form_contact_error_wrapper = document.getElementById('error_input_wrapper');
 let CAPTCHA_VALIDATED = false;
 let CAPTCHA_SIZE = 'normal';
 let VIEWPORT = document.documentElement.clientWidth;
@@ -46,6 +47,7 @@ nav_links.forEach((link) => {
 });
 const form_validate = () => {
 	if (!form_contact.checkValidity()) {
+		form_contact_error_wrapper.style.display = 'block';
 		form_contact_error.style.display = 'block';
 		form_contact_error.innerText = 'Please fill out all required fields!';
 		return;
@@ -55,6 +57,7 @@ const form_validate = () => {
 };
 const form_reset = () => {
 	form_contact.reset();
+	form_contact_error_wrapper.style.display = 'none';
 	form_contact_error.style.display = 'none';
 	form_contact_error.innerText = '';
 };
