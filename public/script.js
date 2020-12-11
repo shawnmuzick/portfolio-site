@@ -6,7 +6,6 @@ const form_contact = document.getElementById('form_contact');
 const form_contact_submit = document.getElementById('form_contact_submit');
 const contact_name = document.getElementById('contact_name');
 const contact_email = document.getElementById('contact_email');
-const contact_organization = document.getElementById('contact_organization');
 const contact_message = document.getElementById('contact_message');
 const captcha = document.getElementById('recaptcha-container');
 const form_contact_error = document.getElementById('form_contact_error');
@@ -72,13 +71,11 @@ form_contact_submit.addEventListener('click', (e) => {
 	const form_data = {
 		name: contact_name.value,
 		email: contact_email.value,
-		organization: contact_organization.value,
 		message: contact_message.value,
 	};
 	db.doc()
 		.set(form_data)
 		.then(() => {
-			console.log('data saved!');
 			window.alert('Message recieved!');
 		})
 		.catch((err) => console.log(err));

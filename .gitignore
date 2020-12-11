@@ -8,11 +8,8 @@ firebase-debug.log*
 todo.txt
 # Firebase cache
 .firebase/
-firebase.json
 database.rules.json
 storage.rules
-firestore.rules
-firestore.indexes.json
 firebase_config.js
 # Firebase config
 
