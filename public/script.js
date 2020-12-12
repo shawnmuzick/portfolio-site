@@ -1,4 +1,3 @@
-import { firebaseConfig } from './firebase_config.js';
 const nav_expand_btn = document.getElementById('mobile-nav-expand');
 const nav_menu = document.getElementById('nav-menu');
 const nav_links = nav_menu.querySelectorAll('li.landing-menu-item');
