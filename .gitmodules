@@ -1,0 +1,3 @@
+[submodule "public/Simple-JS-Breakout"]
+	path = public/Simple-JS-Breakout
+	url = https://github.com/shawnmuzick/Simple-JS-Breakout.git
