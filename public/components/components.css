@@ -1,3 +1,6 @@
+body {
+  overflow: unset;
+}
 .component {
   display: flex;
   flex-direction: column;
@@ -56,8 +59,74 @@ progress::before {
 #skeleton canvas.componentInner {
   border-radius: 3px;
 }
+@media screen and (min-width: 320px) {
+  .component {
+    flex-direction: column-reverse;
+  }
+  .componentContainer {
+    margin: 5px;
+    flex-direction: column;
+  }
+  .componentContainer .componentInner {
+    width: 280px;
+    margin: 10px auto 10px auto;
+  }
+  .componentContainer pre {
+    border-top: 1px solid var(--btn-bg-color);
+    font-size: 0.7rem;
+  }
+  .componentCaption {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 360px) {
+  .componentContainer .componentInner {
+    width: 300;
+  }
+}
+
+@media screen and (min-width: 411px) {
+  .componentContainer .componentInner {
+    width: 350px;
+  }
+  .componentContainer pre {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 731px) {
+  .componentContainer .componentInner {
+    width: 500px;
+  }
+  .componentContainer pre {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .component {
+    flex-direction: column;
+  }
+  .componentContainer {
+    flex-direction: row;
+  }
+  .componentContainer .componentInner {
+    width: 300px;
+    margin: auto;
+  }
+  .componentContainer pre {
+    font-size: 1rem;
+    width: 500px;
+    border-top: none;
+  }
+  .componentCaption {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1024px) {
   #demo-landing {
     margin-top: 75px;
+  }
+  .componentContainer pre {
+    width: 700px;
   }
 }

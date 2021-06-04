@@ -13,6 +13,19 @@ function drawOrb() {
     canvas.width / 2,
     canvas.height / 2,
     75,
+    (1.5 + (1 - total / total)) * Math.PI,
+    (3.5 - (1 - total / total)) * Math.PI
+  );		
+  context.globalAlpha = 0.5;
+  context.fillStyle = "white";
+  context.fill();
+
+  context.globalAlpha = 1;
+  context.beginPath();
+  context.arc(
+    canvas.width / 2,
+    canvas.height / 2,
+    75,
     (1.5 + (1 - current / total)) * Math.PI,
     (3.5 - (1 - current / total)) * Math.PI
   );

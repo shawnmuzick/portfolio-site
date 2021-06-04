@@ -29,3 +29,9 @@ function buildComponent(code, id, captionText) {
 buildComponent(orbs, "orbs", "Use the up/down arrow keys to interact");
 buildComponent(progress, "progress", "");
 buildComponent(skeleton, "skeleton", "Move the skeleton using arrow keys");
+//disable arrow key navigation
+document.addEventListener("keydown", (e) => {
+  if (e.key.includes("Arrow")) {
+    e.preventDefault();
+  }
+});

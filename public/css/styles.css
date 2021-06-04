@@ -172,6 +172,9 @@ section {
 	transition: 0.5s;
 	text-align: left;
 }
+.mobile-nav-title{
+  font-size: 1rem;
+}
 .show {
 	height: 350px;
 }
