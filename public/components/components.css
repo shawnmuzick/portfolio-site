@@ -48,8 +48,16 @@ progress[value] {
 progress::before {
   display: flex;
   justify-content: center;
-  content:attr(data-count) "%";
+  content: attr(data-count) "%";
 }
 ::-webkit-progress-bar {
   border-radius: 10px;
+}
+#skeleton canvas.componentInner {
+  border-radius: 3px;
+}
+@media screen and (min-width: 1024px) {
+  #demo-landing {
+    margin-top: 75px;
+  }
 }

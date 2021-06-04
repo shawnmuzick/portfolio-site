@@ -134,7 +134,12 @@ section {
 	color: var(--header-text-color);
 }
 .section-sub-header {
-	padding: 5px;
+	padding: 5px 0px 5px 0px;
+	text-decoration: underline;
+	text-decoration-color: var(--divider-color);
+	text-decoration-style: double;
+}
+.section-content-link{
 	text-decoration: underline;
 	text-decoration-color: var(--divider-color);
 	text-decoration-style: double;
