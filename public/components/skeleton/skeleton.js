@@ -33,7 +33,7 @@ class Skeleton {
     this.x = x;
     this.y = y;
     this.img = new Image();
-    this.img.src = "/public/components/skeleton/skeleton.png";
+    this.img.src = "./components/skeleton/skeleton.png";
     this.scaleWidth = this.width * 1.5;
     this.scaleHeight = this.height * 1.5;
     this.speed = 5;
@@ -80,7 +80,7 @@ const context = canvas.getContext("2d");
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
 
-let player = new Skeleton({ x: centerX, y: centerY, context });
+let player; 
 
 function clear() {
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -140,5 +140,8 @@ function keyUp() {
 
 document.addEventListener("keydown", (e) => keydown(e, player));
 document.addEventListener("keyup", keyUp);
-window.onload = setInterval(paint, 1000 / 15);
+window.onload = ()=>{
+  player = new Skeleton({ x: centerX, y: centerY, context });
+  setInterval(paint, 1000 / 15);
+}
 `;
