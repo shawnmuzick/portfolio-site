@@ -52,6 +52,7 @@ class Skeleton {
   }
 
   left() {
+    console.log('left');
     this.frameY = map.get("left");
     this.x -= this.speed;
   }
@@ -75,6 +76,38 @@ class Skeleton {
 const canvas = document.createElement("canvas");
 canvas.classList.add("canvas");
 canvas.classList.add('componentInner');
+
+const u = document.createElement('button');
+const l = document.createElement('button');
+const r = document.createElement('button');
+const d = document.createElement('button');
+const btns = [l,r,u,d];
+const dir = ['u','l','r','d'];
+const arr = ['^','<','>','v'];
+let TOUCH = false;
+
+const gamepad = document.createElement('div');
+gamepad.classList.add('gamepad');
+
+for(let i = 0; i < btns.length; i++){
+   btns[i].classList.add('gamepad-btn');
+   btns[i].innerText = arr[i];
+   btns[i].value = arr[i];
+   btns[i].setAttribute('id', dir[i]);
+   btns[i].addEventListener('pointerdown',(e)=>{
+      const interval = setInterval(()=>{
+      handleTouch(e); 
+    }, 100)
+    document.body.addEventListener('pointerup',(e)=>{
+     clearInterval(interval);
+     keyUp();
+    });
+  });
+
+   gamepad.appendChild(btns[i]);
+};
+
+document.getElementById('skeleton').prepend(gamepad);
 document.getElementById('skeleton').prepend(canvas);
 const context = canvas.getContext("2d");
 const centerX = canvas.width / 2;
@@ -122,16 +155,32 @@ function keydown(e, player) {
     case "ArrowRight":
       player.right();
       break;
+    case ">":
+      player.right();
+      break;
     case "ArrowLeft":
+      player.left();
+      break;
+    case "<":
       player.left();
       break;
     case "ArrowUp":
       player.up();
       break;
+    case "^":
+      player.up();
+      break;
     case "ArrowDown":
       player.down();
       break;
+    case "v":
+      player.down();
+      break;
   }
+}
+function handleTouch(e) {
+  e.key = e.target.value;
+  keydown(e, player);
 }
 
 function keyUp() {
