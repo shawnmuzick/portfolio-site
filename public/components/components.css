@@ -2,6 +2,7 @@
   --shadow: 0px 3px 3px 3px #888888;
   --shadow-bk: 0px 3px 3px 3px black;
   --blue-accent: #3c90c1;
+  --round-corner: 1rem;
 }
 body {
   overflow: unset;
@@ -67,7 +68,7 @@ progress::before {
   border-radius: 10px;
 }
 #skeleton canvas.componentInner {
-  border-radius: 3px;
+  border-radius: var(--round-corner);
 }
 
 .gamepad {
@@ -116,7 +117,7 @@ progress::before {
   border: 0px;
   overflow: hidden;
   z-index: 7;
-  border-radius: 1rem;
+  border-radius: var(--round-corner);
 }
 .wave::before {
   content: "";
