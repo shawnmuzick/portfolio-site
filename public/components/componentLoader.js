@@ -8,6 +8,10 @@ const main = document.getElementById("main");
 function buildComponent(code, id, captionText) {
   const component = document.createElement("div");
   component.classList.add("component");
+  component.classList.add("flex");
+  component.classList.add("bg-dark");
+  component.classList.add("border-purple");
+  component.classList.add("card");
 
   const componentContainer = document.createElement("div");
   componentContainer.classList.add("componentContainer");
