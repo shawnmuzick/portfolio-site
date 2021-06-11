@@ -370,7 +370,7 @@ dialog {
 dialog img {
   margin: 1rem;
 }
-dialog img:hover{
+dialog img:hover, button img:hover{
   border: none;
   box-shadow: none;
 }
