@@ -19,13 +19,19 @@
   background-clip: padding-box;
 }
 ::-webkit-scrollbar {
-  background-color:var(--bg-dark); 
+  background-color: var(--bg-dark);
 }
 
 /* Utility Classes--------------------------------------------------------- */
 .flex {
   display: flex;
   flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.wrap {
+  flex-wrap: wrap;
 }
 .center {
   justify-content: center;
@@ -306,10 +312,6 @@ a:hover {
   border: solid 2px var(--header-text-color);
   border-radius: var(--border-circle);
 }
-.social-links img:hover {
-  border: solid 2px var(--hover-highlight-color);
-  box-shadow: 0px 0px 30px 10px var(--divider-color);
-}
 #form_contact_error {
   background-color: rgb(255, 45, 45);
   padding: 10px;
@@ -333,6 +335,47 @@ a:hover {
 }
 .card img {
   width: 30%;
+}
+.gallery img {
+  margin: 5px;
+  border: solid 2px;
+  border-color: transparent;
+  box-shadow: 0px 0px 30px 10px transparent;
+}
+:is(img):hover {
+  border-color: var(--divider-color);
+  box-shadow: 0px 0px 30px 10px var(--divider-color);
+  transition: 0.3s;
+}
+dialog {
+  background-color: rgba(0, 0, 0, 0.836);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0px;
+  border: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+dialog img {
+  margin: 1rem;
+}
+dialog img:hover{
+  border: none;
+  box-shadow: none;
+}
+dialog[open] {
+  opacity: 1;
 }
 @media screen and (min-height: 731px) {
   .site-title-container {
