@@ -17,12 +17,6 @@
       onload="this.onload=null; this.rel = 'stylesheet'"
       href="#"
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
     <link rel="stylesheet" href="./css/styles.min.css" />
 
     <title>Shawn Matyasovszky | Web Developer</title>
@@ -38,11 +32,30 @@
             </h1>
           </div>
           <div class="card border-purple bg-dark">
-            <img
-              class="landing-content-image"
-              src="./img/shawn.webp"
-              alt="photo of shawn matyasovszky"
-            />
+            <picture>
+              <source media="(min-width:1024px)" srcset="./img/shawn.webp" />
+              <source
+                media="(min-width:768px)"
+                srcset="./img/shawn-200x200.webp"
+              />
+              <source
+                media="(min-width:411px)"
+                srcset="./img/shawn-200x200.webp"
+              />
+              <source
+                media="(min-width:360px)"
+                srcset="./img/shawn-200x200.webp"
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="./img/shawn-100x100.webp"
+              />
+              <img
+                class="landing-content-image"
+                src="./img/shawn.webp"
+                alt="photo of shawn matyasovszky"
+              />
+            </picture>
             <div class="landing-content-text">
               <div class="flex center section-title-container">
                 <h2>Hi! I'm Shawn</h2>
@@ -93,7 +106,6 @@
           <div class="flex center section-title-container">
             <h2 class="section-title">Projects</h2>
           </div>
-
           <div class="section-content-container">
             <h3 class="section-sub-header">SteveNoxon.com</h3>
             <p>
@@ -148,37 +160,97 @@
             </p>
             <p>Images:</p>
             <div class="flex center row wrap gallery">
-              <img
-                src="./img/canon1-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
-              <img
-                src="./img/canon2-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
-              <img
-                src="./img/canon3-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
-              <img
-                src="./img/canon4-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
-
-              <img
-                src="./img/canon6-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
-              <img
-                src="./img/canon7-thumbnail.webp"
-                alt="photo of canon application"
-                class="gallery-image"
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon1-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon1-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon1-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon2-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon2-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon2-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon3-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon3-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon3-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon4-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon4-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon4-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon6-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon6-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon6-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="./img/canon7-thumbnail.webp"
+                />
+                <source
+                  media="(min-width:360px)"
+                  srcset="./img/canon7-thumbnail-100x100.webp"
+                />
+                <img
+                  src="./img/canon7-thumbnail.webp"
+                  alt="photo of canon application"
+                  class="gallery-image"
+                />
+              </picture>
+            </div>
           </div>
           <div class="section-content-container">
             <h3 class="section-sub-header">JC-Music.com</h3>

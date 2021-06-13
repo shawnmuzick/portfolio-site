@@ -333,9 +333,6 @@ a:hover {
   min-width: 80vw;
   max-width: 80vw;
 }
-.card img {
-  width: 30%;
-}
 .gallery img {
   margin: 5px;
   border: solid 2px;
