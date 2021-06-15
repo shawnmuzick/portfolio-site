@@ -17,7 +17,6 @@ let VIEWPORT = document.documentElement.clientWidth;
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-firebase.auth();
 const firestore = firebase.firestore();
 const db = firestore.collection("contactData");
 const galleryImages = [...document.getElementsByClassName("gallery-image")];
@@ -25,14 +24,6 @@ if (VIEWPORT <= 360) {
   CAPTCHA_SIZE = "compact";
 }
 
-window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(captcha, {
-  size: CAPTCHA_SIZE,
-  //theme: 'dark',
-  callback: function (response) {
-    CAPTCHA_VALIDATED = true;
-  },
-});
-recaptchaVerifier.render();
 function handle_nav() {
   if (nav_menu.classList.contains("show")) {
     nav_menu.classList.remove("show");
@@ -65,11 +56,6 @@ const form_reset = () => {
 form_contact_submit.addEventListener("click", (e) => {
   e.preventDefault();
   if (!form_validate()) return;
-  if (!CAPTCHA_VALIDATED) {
-    form_contact_error.style.display = "block";
-    form_contact_error.innerText = "Please complete the captcha!";
-    return;
-  }
   const form_data = {
     name: contact_name.value,
     email: contact_email.value,
