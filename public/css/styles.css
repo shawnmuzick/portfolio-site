@@ -51,6 +51,9 @@
 .bg-main {
   background-color: var(--main-bg-color);
 }
+.rounded{
+border-radius: 1rem;
+}
 /* ------------------------------------------------------------------------- */
 body {
   margin: 5px;

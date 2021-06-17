@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/styles.min.css" />
+    <title>Html Templates</title>
+    <style>
+      pre {
+        color: white;
+        padding: 1rem;
+        font-size: 0.8em;
+        width: 80%;
+        overflow: auto;
+      }
+      @media screen and (min-width: 1024px) {
+        main {
+          padding-top: 75px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main" class="flex center bg-main">
+      <h1>HTML Templates</h1>
+      <div class="flex center card bg-dark border-purple">
+        <h2>Some things I ran into:</h2>
+        <p>
+          Because these templates were usually executing paths to javascript or
+          image files, when the were invoked in their "new" home, the relative
+          paths were now relative to that new home. Thus, absolute paths from
+          the project root, in this case "public" had to be used to ensure the
+          path would remain consistent and not vary based on where it was
+          invoked
+        </p>
+        <p>
+          Here's the code which generates the social links footer area at the
+          bottom of each page:
+        </p>
+        <pre class="flex bg-main rounded">
+const footer = document.getElementsByTagName("footer")[0];
+const template = document.createElement("template");
+async function getTemplate() {
+    const data = await (await fetch("/public/templates/footer.html")).text();
+    template.innerHTML = data;
+    let section = template.content.querySelector('section');
+    footer.appendChild(section);
+}
+getTemplate();
+        </pre>
+        <p>
+          As this site is growing, and because I'm not using any kind of css or
+          build tools, I'm already running into some code management issues.
+          Send help.
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+    <ul class="nav-menu bg-dark" id="nav-menu">
+      <nav class="landing-menu" id="nav">
+        <h1 class="site-title nav-item">
+          <a href="./index.html"> Shawn Matyasovszky - Web Developer</a>
+        </h1>
+      </nav>
+    </ul>
+
+    <nav class="nav bg-dark" id="mobile-nav">
+      <button
+        class="nav-expand-btn btn"
+        id="mobile-nav-expand"
+        aria-label="expand-menu"
+      >
+        <img src="../../img/menu-24px.svg" alt="menu expand icon" />
+      </button>
+      <h1 class="mobile-nav-title">Shawn Matyasovszky</h1>
+    </nav>
+  </body>
+  <script defer src="../../js/DomComponents/nav.min.js" type="module"></script>
+  <script
+    defer
+    src="../../js/DomComponents/footer.min.js"
+    type="module"
+  ></script>
+</html>

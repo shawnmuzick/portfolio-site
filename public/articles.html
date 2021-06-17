@@ -14,33 +14,36 @@
     <link
       rel="preload"
       as="style"
-      href="#"
       onload="this.onload=null; this.rel = 'stylesheet'"
+      href="#"
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
     <link rel="stylesheet" href="./css/styles.min.css" />
-    <link rel="stylesheet" href="./components/components.min.css" />
-    <link rel="preload" as="image" href="./components/skeleton/skeleton.png" />
+    <link rel="stylesheet" href="./css/articles.min.css" />
 
-    <title>Shawn Matyasovszky | Demos</title>
+    <title>Shawn Matyasovszky | Articles</title>
   </head>
   <body>
     <main id="main" class="flex center bg-main">
-      <div class="flex component bg-dark card border-purple" id="demo-landing">
-        <div class="componentContainer">
-          <div class="componentInnerFullWidth">
-            <h2>Demos</h2>
-            <p>
-              This page displays demos and code samples. Check the notes for
-              each, as many are interactive!
-            </p>
-          </div>
-        </div>
+      <div class="flex center card bg-dark border-purple">
+        <p>
+          In setting up this blog section, I had to find a way to try to reuse
+          the html code I wrote. Many pieces are duplicated, so it's difficult
+          to manage without a way to centralize control over it and make it
+          repeatable. I discuss that more in this article.
+        </p>
+        <a href="./articles/2021/htmlTemplates.html"> Read more </a>
+      </div>
+      <div class="flex center card bg-dark border-purple">
+        <a href="./articles/article.html?name=test">Check back soon!</a>
+      </div>
+      <div class="flex center card bg-dark border-purple">
+        <a href="./articles/article.html?name=test">Check back soon!</a>
+      </div>
+      <div class="flex center card bg-dark border-purple">
+        <a href="./articles/article.html?name=test">Check back soon!</a>
+      </div>
+      <div class="flex center card bg-dark border-purple">
+        <a href="./articles/article.html?name=test">Check back soon!</a>
       </div>
     </main>
     <footer></footer>
@@ -72,16 +75,9 @@
       defer
       src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"
     ></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script
       defer
       src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"
-    ></script>
-    <script
-      defer
-      src="./components/componentLoader.min.js"
-      type="module"
     ></script>
     <script defer src="./js/DomComponents/nav.min.js" type="module"></script>
     <script defer src="./js/DomComponents/footer.min.js" type="module"></script>
