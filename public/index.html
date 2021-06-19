@@ -22,8 +22,10 @@
     <title>Shawn Matyasovszky | Web Developer</title>
   </head>
   <body>
-    <main>
+    <main id="main">
+      <!-- Begin Main Content -->
       <section class="flex section-landing" id="landing">
+        <!-- Begin Landing/Profile section -->
         <div class="landing-content-container">
           <div class="flex center site-title-container">
             <h1 class="mobile-site-title">
@@ -71,8 +73,10 @@
             </div>
           </div>
         </div>
+        <!-- End Landing/Profile section -->
       </section>
       <section id="bio" class="flex center">
+        <!-- Begin Bio -->
         <div class="card flex bg-dark border-purple">
           <div class="flex center section-title-container">
             <h2 class="section-title">Bio</h2>
@@ -100,8 +104,10 @@
             </ul>
           </div>
         </div>
+        <!-- End Bio -->
       </section>
       <section class="flex center" id="projects">
+        <!-- Begin Projects -->
         <div class="card flex bg-dark border-purple">
           <div class="flex center section-title-container">
             <h2 class="section-title">Projects</h2>
@@ -340,8 +346,10 @@
             </p>
           </div>
         </div>
+        <!-- End Projects -->
       </section>
       <section class="flex center" id="certifications">
+        <!-- Begin Certifications -->
         <div class="card flex bg-dark border-purple">
           <div class="flex center section-title-container">
             <h2 class="section-title">Certifications</h2>
@@ -406,8 +414,10 @@
             </ul>
           </div>
         </div>
+        <!-- End Certifications -->
       </section>
       <section class="flex center" id="reviews">
+        <!-- Begin Reviews -->
         <div class="card flex bg-dark border-purple">
           <div class="flex center section-title-container">
             <h2 class="section-title">Reviews</h2>
@@ -417,8 +427,10 @@
             <h3 class="section-sub-header">Check back soon!</h3>
           </div>
         </div>
+        <!-- End Reviews -->
       </section>
       <section class="flex center" id="contact">
+        <!-- Begin Contact -->
         <form
           name="contact"
           id="form_contact"
@@ -467,27 +479,11 @@
             <input id="form_contact_submit" type="submit" class="btn" />
           </div>
         </form>
+        <!-- End Contact -->
       </section>
-      <footer></footer>
+      <!-- End Main Content -->
     </main>
-    <ul class="nav-menu bg-dark" id="nav-menu">
-      <nav class="landing-menu" id="nav">
-        <h1 class="site-title nav-item">
-          <a href="./index.html"> Shawn Matyasovszky - Web Developer</a>
-        </h1>
-      </nav>
-    </ul>
-
-    <nav class="nav bg-dark" id="mobile-nav">
-      <button
-        class="nav-expand-btn btn"
-        id="mobile-nav-expand"
-        aria-label="expand-menu"
-      >
-        <img src="./img/menu-24px.svg" alt="menu expand icon" />
-      </button>
-      <h1 class="mobile-nav-title">Shawn Matyasovszky</h1>
-    </nav>
+    <!-- Begin Scripts -->
     <script preload src="firebase_config.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script
@@ -502,8 +498,8 @@
       defer
       src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"
     ></script>
-    <script defer src="./js/DomComponents/nav.min.js" type="module"></script>
-    <script defer src="./js/DomComponents/footer.min.js" type="module"></script>
+    <script defer src="/js/pageFactory.min.js" type="module"></script>
     <script defer src="./js/script.min.js" type="module"></script>
+    <!-- End Scripts -->
   </body>
 </html>

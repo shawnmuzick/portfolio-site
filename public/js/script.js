@@ -1,6 +1,3 @@
-const nav_expand_btn = document.getElementById("mobile-nav-expand");
-const nav_menu = document.getElementById("nav-menu");
-const nav_links = nav_menu.querySelectorAll("li.landing-menu-item");
 const form_contact = document.getElementById("form_contact");
 const form_contact_submit = document.getElementById("form_contact_submit");
 const contact_name = document.getElementById("contact_name");
@@ -24,19 +21,6 @@ if (VIEWPORT <= 360) {
   CAPTCHA_SIZE = "compact";
 }
 
-function handle_nav() {
-  if (nav_menu.classList.contains("show")) {
-    nav_menu.classList.remove("show");
-  } else {
-    nav_menu.classList.add("show");
-  }
-}
-
-nav_expand_btn.addEventListener("click", handle_nav);
-
-nav_links.forEach((link) => {
-  link.addEventListener("click", handle_nav);
-});
 const form_validate = () => {
   if (!form_contact.checkValidity()) {
     form_contact_error_wrapper.style.display = "block";
@@ -79,7 +63,7 @@ function handleModal(e) {
 
   closeBtn.innerText = "X";
   closeBtn.style.marginLeft = "auto";
-  closeBtn.classList.add('btn');
+  closeBtn.classList.add("btn");
   img.src = e.target.getAttribute("src").split("-")[0] + ".webp";
 
   container1.appendChild(closeBtn);

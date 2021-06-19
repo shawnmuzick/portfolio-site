@@ -31,6 +31,7 @@
   </head>
   <body>
     <main id="main" class="flex center bg-main">
+      <!-- Begin Main Content -->
       <div class="flex component bg-dark card border-purple" id="demo-landing">
         <div class="componentContainer">
           <div class="componentInnerFullWidth">
@@ -42,48 +43,16 @@
           </div>
         </div>
       </div>
+      <!-- End Main Content -->
     </main>
-    <footer></footer>
-    <ul class="nav-menu bg-dark" id="nav-menu">
-      <nav class="landing-menu" id="nav">
-        <h1 class="site-title nav-item">
-          <a href="./index.html"> Shawn Matyasovszky - Web Developer</a>
-        </h1>
-      </nav>
-    </ul>
-
-    <nav class="nav bg-dark" id="mobile-nav">
-      <button
-        class="nav-expand-btn btn"
-        id="mobile-nav-expand"
-        aria-label="expand-menu"
-      >
-        <img src="./img/menu-24px.svg" alt="menu expand icon" />
-      </button>
-      <h1 class="mobile-nav-title">Shawn Matyasovszky</h1>
-    </nav>
-    <script preload src="firebase_config.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"
-    ></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"
-    ></script>
+    <!-- Begin Scripts -->
     <script
       defer
       src="./components/componentLoader.min.js"
       type="module"
-    ></script>
-    <script defer src="./js/DomComponents/nav.min.js" type="module"></script>
-    <script defer src="./js/DomComponents/footer.min.js" type="module"></script>
+    >
+  </script>
+    <script defer src="/js/pageFactory.min.js" type="module"></script>
+    <!-- End Scripts -->
   </body>
 </html>

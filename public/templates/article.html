@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <h1>HI</h1> 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <title id="meta-title"></title>
+  </head>
+  <body>
+    <main class="flex center bg-main">
+      <h1 id="title"></h1>
+    </main>
+    <footer></footer>
+    <ul class="nav-menu bg-dark" id="nav-menu">
+      <nav class="landing-menu" id="nav">
+        <h1 class="site-title nav-item">
+          <a href="./index"> Shawn Matyasovszky - Web Developer</a>
+        </h1>
+      </nav>
+    </ul>
+
+    <nav class="nav bg-dark" id="mobile-nav"></nav>
+  </body>
+  <script defer src="/js/DomComponents/nav.min.js" type="module"></script>
+  <script defer src="/js/DomComponents/footer.min.js" type="module"></script>
 </html>
