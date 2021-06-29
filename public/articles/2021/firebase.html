@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="stylesheet" href="/css/articles/2021/htmlTemplates.min.css" />
+    <title>Firebase</title>
+</head>
+
+<body>
+    <main id="main" class="flex center bg-main">
+        <!-- Begin Main Content -->
+        <h1 id="title">Firebase</h1>
+        <div class="flex center card bg-dark border-black">
+            <h2>Organizing pages</h2>
+            <p>As it turns out, Firbase doesn't allow displaying of "directory pages", which makes setting up a "blog"
+                structure pretty inefficient, as any linking would have to all be done manually, or managed by the
+                firestore database. My thought was to use the directory listing pages for blog post navigation.
+            </p>
+            <p>
+                I'm overall trying to stay away from dynamic sites here for performance reasons. If
+                you're willing to spend money on decent hosting, you can MAKE Wordpress performant. But without
+                resources to throw at it, Wordpress is a bloated, laggy, system overloading nightmare of a build tool.
+            </p>
+            <p>If I decide to go the dynamic thing, I'll probably opt for Ghost. I don't have much of an interest in
+                selling anything, and even if I did Ghost has options there too. It's fast, it's easy to work with, it's
+                everything Wordpress is not. But for now, my hosting costs for this firebase hosted site are exactly $0
+                (sans the domain name, obviously), which is definitely the right price.</p>
+        </div>
+        <!-- End Main Content -->
+    </main>
+    <!-- Begin Scripts -->
+    <script defer src="/js/pageFactory.min.js" type="module"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>

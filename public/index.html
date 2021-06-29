@@ -1,505 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="Shawn, Matyasovszky, shawn, Matyasovszky, web developer, HTML, html, CSS, css, Javascript, javascript"
-    />
-    <meta
-      name="description"
-      content="Shawn Matyasovszky is a web developer based out of Connecticut, USA. "
-    />
-    <link
-      rel="preload"
-      as="style"
-      onload="this.onload=null; this.rel = 'stylesheet'"
-      href="#"
-    />
-    <link rel="stylesheet" href="./css/styles.min.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords"
+		content="Shawn, Matyasovszky, shawn, Matyasovszky, web developer, HTML, html, CSS, css, Javascript, javascript" />
+	<meta name="description" content="Shawn Matyasovszky is a web developer based out of Connecticut, USA. " />
+	<link rel="preload" as="style" onload="this.onload=null; this.rel = 'stylesheet'" href="#" />
+	<link rel="stylesheet" href="./css/styles.min.css" />
 
-    <title>Shawn Matyasovszky | Web Developer</title>
-  </head>
-  <body>
-    <main id="main" class="bg-main">
-      <!-- Begin Main Content -->
-      <section class="flex section-landing" id="landing">
-        <!-- Begin Landing/Profile section -->
-        <div class="landing-content-container">
-          <div class="flex center site-title-container">
-            <h1 class="mobile-site-title">
-              Shawn Matyasovszky<br />
-              Web Developer
-            </h1>
-          </div>
-          <div class="card border-black bg-dark">
-            <picture>
-              <source media="(min-width:1024px)" srcset="./img/shawn.webp" />
-              <source
-                media="(min-width:768px)"
-                srcset="./img/shawn-200x200.webp"
-              />
-              <source
-                media="(min-width:411px)"
-                srcset="./img/shawn-200x200.webp"
-              />
-              <source
-                media="(min-width:360px)"
-                srcset="./img/shawn-200x200.webp"
-              />
-              <source
-                media="(min-width:320px)"
-                srcset="./img/shawn-100x100.webp"
-              />
-              <img
-                class="landing-content-image"
-                src="./img/shawn.webp"
-                alt="photo of shawn matyasovszky"
-              />
-            </picture>
-            <div class="landing-content-text">
-              <div class="flex center section-title-container">
-                <h2>Hi! I'm Shawn</h2>
-              </div>
-              <div class="section-content-container">
-                <p>
-                  I build things for the web, mostly with technologies in the
-                  Javascript ecosystem. Learn more below. Be sure to check out
-                  some of the cool stuff on the demos page, and the code over on
-                  github!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Landing/Profile section -->
-      </section>
-      <section id="bio" class="flex center">
-        <!-- Begin Bio -->
-        <div class="card flex bg-dark border-black">
-          <div class="flex center section-title-container">
-            <h2 class="section-title">Bio</h2>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">About</h3>
-            <p>
-              I am an aspiring web developer based in central Connecticut, USA.
-              I'm primarily interested in the Javascript and C languages. When
-              I'm not working to improve my development skills, I teach guitar
-              and music theory lessons.
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Technologies</h3>
-            <ul>
-              <li>Html/CSS</li>
-              <li>Javascript</li>
-              <li>NodeJS/ExpressJS</li>
-              <li>ReactJS</li>
-              <li>MongoDB</li>
-              <li>SQL Server</li>
-              <li>C</li>
-              <li>GTK</li>
-            </ul>
-          </div>
-        </div>
-        <!-- End Bio -->
-      </section>
-      <section class="flex center" id="projects">
-        <!-- Begin Projects -->
-        <div class="card flex bg-dark border-black">
-          <div class="flex center section-title-container">
-            <h2 class="section-title">Projects</h2>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">SteveNoxon.com</h3>
-            <p>
-              SteveNoxon.com is a wordpress site I built for Steve Noxon, host
-              of WATR's "Talk of the Town". The site primarily features audio
-              clips from Steve's radio show. It uses a stock WordPress theme
-              with some custom styling.
-            </p>
-            <p>
-              <a href="https://www.stevenoxon.com" target="blank"
-                ><span class="section-content-link">View live site</span></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">PoRiverMusic.com</h3>
-            <p>
-              PoRiverMusic is a static html site for the Po River orchestral
-              instrument company.
-            </p>
-            <p>
-              <a href="https://www.porivermusic.com" target="blank"
-                ><span class="section-content-link">View live site</span></a
-              >
-            </p>
-            <p>
-              <a href="https://github.com/shawnmuzick/PoRiver" target="blank"
-                ><span class="section-content-link"
-                  >View the code on Github</span
-                ></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Canon</h3>
-            <p>
-              This is a multi-purpose web app developed for an employer. It
-              includes analytics and forecasting with ChartJS used for the
-              datavis. It also includes a graphic sales tag generator, a graphic
-              catalog builder, an integration with the Reverb.com API to post
-              products, and much more! The project is built using SQL server to
-              integrate with the company's Point of Sale system. It also NodeJS,
-              ExpressJS and TediousJS on the back end. The front end is built
-              using HTML/CSS and plain JS. Note: many images contain portions
-              redacted to respect the company's privacy
-            </p>
-            <p>
-              <a href="./index.html#contact"
-                ><span class="section-content-link">Contact me</span></a
-              >
-              for code samples
-            </p>
-            <p>Images:</p>
-            <div class="flex center row wrap gallery">
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon1-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon1-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon1-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon2-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon2-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon2-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon3-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon3-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon3-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon4-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon4-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon4-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon6-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon6-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon6-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(min-width:768px)"
-                  srcset="./img/canon7-thumbnail.webp"
-                />
-                <source
-                  media="(min-width:360px)"
-                  srcset="./img/canon7-thumbnail-100x100.webp"
-                />
-                <img
-                  src="./img/canon7-thumbnail.webp"
-                  alt="photo of canon application"
-                  class="gallery-image"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">JC-Music.com</h3>
-            <p>
-              JC-Music.com is a wordpress site based on the Shopify theme. It
-              uses WooCommerce as it's ecommerce solution, with which it sells a
-              variety of musical goods and services. The site has gone through
-              several designs and maintainers over the company's history. As
-              it's current maintainer, I have added new functionality, such as
-              conditional shipping charges and cross-sell items at cart. I habe
-              also improved product taxonomies, added new products and made
-              stylistic and performance adjustments.
-            </p>
-            <p>
-              <a href="https://www.jc-music.com" target="blank"
-                ><span class="section-content-link">View live site</span></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Simple JS Breakout Game</h3>
-            <p>
-              This is a simple Breakout clone built in vanilla JS. The point of
-              the exercise was to gain a better understanding of HTML canvas,
-              the animation cycle, and game concepts like hit detection.
-            </p>
-            <p>
-              <a href="./Simple-JS-Breakout/" target="blank"
-                ><span class="section-content-link">Play the Game here!</span>
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://github.com/shawnmuzick/Simple-JS-Breakout"
-                target="blank"
-                ><span class="section-content-link"
-                  >View the code on Github</span
-                ></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Music Lesson Scheduler (MERN)</h3>
-            <p>
-              This project was created using a MERN stack, as well as the
-              FullCalendar library. It allows drag and drop scheduling,
-              parameters for business hours and teacher availability, rosters,
-              and more!
-            </p>
-            <p>
-              <a
-                href="https://github.com/shawnmuzick/musicLessons"
-                target="blank"
-                ><span class="section-content-link"
-                  >View the code on Github</span
-                ></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">FortRocks.com</h3>
-            <p>
-              FortRocks.com is a wordpress site based on the Storefront theme.
-              It uses WooCommerce as it's ecommerce solution
-            </p>
-            <p>
-              <a href="https://www.fortrocks.com" target="blank"
-                ><span class="section-content-link">View live site</span></a
-              >
-            </p>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Password Storage (JS)</h3>
-            <p>
-              This is a simple app built with Node, Express, and MongoDB on the
-              backend and HTML/CSS/JS on the frontend.
-            </p>
+	<title>Shawn Matyasovszky | Web Developer</title>
+</head>
 
-            <p>
-              <a
-                href="https://github.com/shawnmuzick/vanilla-js-node-password-apps"
-                target="blank"
-                ><span class="section-content-link"
-                  >View the code on Github</span
-                ></a
-              >
-            </p>
-          </div>
-        </div>
-        <!-- End Projects -->
-      </section>
-      <section class="flex center" id="certifications">
-        <!-- Begin Certifications -->
-        <div class="card flex bg-dark border-black">
-          <div class="flex center section-title-container">
-            <h2 class="section-title">Certifications</h2>
-          </div>
-          <div style="display: flex; justify-content: center">
-            <p>Click on any certificate below to view</p>
-          </div>
+<body>
+	<main id="main" class="bg-main">
+		<!-- Begin Main Content -->
+		<section class="flex section-landing" id="landing">
+			<!-- Begin Landing/Profile section -->
+			<div class="landing-content-container">
+				<div class="flex center site-title-container">
+					<h1 class="mobile-site-title">
+						Shawn Matyasovszky<br />
+						Web Developer
+					</h1>
+				</div>
+				<div class="card border-black bg-dark">
+					<picture>
+						<source media="(min-width:1024px)" srcset="./img/shawn.webp" />
+						<source media="(min-width:768px)" srcset="./img/shawn-200x200.webp" />
+						<source media="(min-width:411px)" srcset="./img/shawn-200x200.webp" />
+						<source media="(min-width:360px)" srcset="./img/shawn-200x200.webp" />
+						<source media="(min-width:320px)" srcset="./img/shawn-100x100.webp" />
+						<img class="landing-content-image" src="./img/shawn.webp" alt="photo of shawn matyasovszky" />
+					</picture>
+					<div class="landing-content-text">
+						<div class="flex center section-title-container">
+							<h2>Hi! I'm Shawn</h2>
+						</div>
+						<div class="section-content-container">
+							<p>
+								I build things for the web, mostly with technologies in the
+								Javascript ecosystem. Learn more below. Be sure to check out
+								some of the cool stuff on the demos page, and the code over on
+								github!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Landing/Profile section -->
+		</section>
+		<section id="bio" class="flex center">
+			<!-- Begin Bio -->
+			<div class="card flex bg-dark border-black">
+				<div class="flex center section-title-container">
+					<h2 class="section-title">Bio</h2>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">About</h3>
+					<p>
+						I am an aspiring web developer based in central Connecticut, USA.
+						I'm primarily interested in the Javascript and C languages. When
+						I'm not working to improve my development skills, I teach guitar
+						and music theory lessons.
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Technologies</h3>
+					<ul>
+						<li>Html/CSS</li>
+						<li>Javascript</li>
+						<li>NodeJS/ExpressJS</li>
+						<li>ReactJS</li>
+						<li>MongoDB</li>
+						<li>SQL Server</li>
+						<li>C</li>
+						<li>GTK</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Bio -->
+		</section>
+		<section class="flex center" id="projects">
+			<!-- Begin Projects -->
+			<div class="card flex bg-dark border-black">
+				<div class="flex center section-title-container">
+					<h2 class="section-title">Projects</h2>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">SteveNoxon.com</h3>
+					<p>
+						SteveNoxon.com is a wordpress site I built for Steve Noxon, host
+						of WATR's "Talk of the Town". The site primarily features audio
+						clips from Steve's radio show. It uses a stock WordPress theme
+						with some custom styling.
+					</p>
+					<p>
+						<a href="https://www.stevenoxon.com" target="blank"><span class="section-content-link">View live
+								site</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">PoRiverMusic.com</h3>
+					<p>
+						PoRiverMusic is a static html site for the Po River orchestral
+						instrument company.
+					</p>
+					<p>
+						<a href="https://www.porivermusic.com" target="blank"><span class="section-content-link">View
+								live site</span></a>
+					</p>
+					<p>
+						<a href="https://github.com/shawnmuzick/PoRiver" target="blank"><span
+								class="section-content-link">View the code on Github</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Canon</h3>
+					<p>
+						This is a multi-purpose web app developed for an employer. It
+						includes analytics and forecasting with ChartJS used for the
+						datavis. It also includes a graphic sales tag generator, a graphic
+						catalog builder, an integration with the Reverb.com API to post
+						products, and much more! The project is built using SQL server to
+						integrate with the company's Point of Sale system. It also NodeJS,
+						ExpressJS and TediousJS on the back end. The front end is built
+						using HTML/CSS and plain JS. Note: many images contain portions
+						redacted to respect the company's privacy
+					</p>
+					<p>
+						<a href="./index.html#contact"><span class="section-content-link">Contact me</span></a>
+						for code samples
+					</p>
+					<p>Images:</p>
+					<div class="flex center row wrap gallery">
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon1-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon1-thumbnail-100x100.webp" />
+							<img src="./img/canon1-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon2-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon2-thumbnail-100x100.webp" />
+							<img src="./img/canon2-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon3-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon3-thumbnail-100x100.webp" />
+							<img src="./img/canon3-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon4-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon4-thumbnail-100x100.webp" />
+							<img src="./img/canon4-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon6-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon6-thumbnail-100x100.webp" />
+							<img src="./img/canon6-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+						<picture>
+							<source media="(min-width:768px)" srcset="./img/canon7-thumbnail.webp" />
+							<source media="(min-width:360px)" srcset="./img/canon7-thumbnail-100x100.webp" />
+							<img src="./img/canon7-thumbnail.webp" alt="photo of canon application"
+								class="gallery-image" />
+						</picture>
+					</div>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">JC-Music.com</h3>
+					<p>
+						JC-Music.com is a wordpress site based on the Shopify theme. It
+						uses WooCommerce as it's ecommerce solution, with which it sells a
+						variety of musical goods and services. The site has gone through
+						several designs and maintainers over the company's history. As
+						it's current maintainer, I have added new functionality, such as
+						conditional shipping charges and cross-sell items at cart. I habe
+						also improved product taxonomies, added new products and made
+						stylistic and performance adjustments.
+					</p>
+					<p>
+						<a href="https://www.jc-music.com" target="blank"><span class="section-content-link">View live
+								site</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Simple JS Breakout Game</h3>
+					<p>
+						This is a simple Breakout clone built in vanilla JS. The point of
+						the exercise was to gain a better understanding of HTML canvas,
+						the animation cycle, and game concepts like hit detection.
+					</p>
+					<p>
+						<a href="./Simple-JS-Breakout/" target="blank"><span class="section-content-link">Play the Game
+								here!</span>
+						</a>
+					</p>
+					<p>
+						<a href="https://github.com/shawnmuzick/Simple-JS-Breakout" target="blank"><span
+								class="section-content-link">View the code on Github</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Music Lesson Scheduler (MERN)</h3>
+					<p>
+						This project was created using a MERN stack, as well as the
+						FullCalendar library. It allows drag and drop scheduling,
+						parameters for business hours and teacher availability, rosters,
+						and more!
+					</p>
+					<p>
+						<a href="https://github.com/shawnmuzick/musicLessons" target="blank"><span
+								class="section-content-link">View the code on Github</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">FortRocks.com</h3>
+					<p>
+						FortRocks.com is a wordpress site based on the Storefront theme.
+						It uses WooCommerce as it's ecommerce solution
+					</p>
+					<p>
+						<a href="https://www.fortrocks.com" target="blank"><span class="section-content-link">View live
+								site</span></a>
+					</p>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Password Storage (JS)</h3>
+					<p>
+						This is a simple app built with Node, Express, and MongoDB on the
+						backend and HTML/CSS/JS on the frontend.
+					</p>
 
-          <div class="section-content-container">
-            <h3 class="section-sub-header">FreeCodeCamp.org</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/responsive-web-design"
-                  target="blank"
-                >
-                  Responsive Web Design</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/javascript-algorithms-and-data-structures"
-                  target="blank"
-                >
-                  Javascript Algorithms and Data Structures</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">HackerRank.com</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://www.hackerrank.com/certificates/53105a0bc555?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate"
-                  target="blank"
-                >
-                  Javascript (Basic) Certificate
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Udemy.com</h3>
-            <ul>
-              <li>
-                <a
-                  href="http://ude.my/UC-efedf21b-9efb-46c4-9833-f9179f2c8a2d"
-                  target="blank"
-                >
-                  Javascript: Understanding the Weird Parts</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://ude.my/UC-c0bee547-75d8-4e06-920c-b4fc5c15dca2"
-                  target="blank"
-                >
-                  Learn and Understand NodeJS</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- End Certifications -->
-      </section>
-      <section class="flex center" id="reviews">
-        <!-- Begin Reviews -->
-        <div class="card flex bg-dark border-black">
-          <div class="flex center section-title-container">
-            <h2 class="section-title">Reviews</h2>
-          </div>
+					<p>
+						<a href="https://github.com/shawnmuzick/vanilla-js-node-password-apps" target="blank"><span
+								class="section-content-link">View the code on Github</span></a>
+					</p>
+				</div>
+			</div>
+			<!-- End Projects -->
+		</section>
+		<section class="flex center" id="certifications">
+			<!-- Begin Certifications -->
+			<div class="card flex bg-dark border-black">
+				<div class="flex center section-title-container">
+					<h2 class="section-title">Certifications</h2>
+				</div>
+				<div style="display: flex; justify-content: center">
+					<p>Click on any certificate below to view</p>
+				</div>
 
-          <div class="section-content-container">
-            <h3 class="section-sub-header">Check back soon!</h3>
-          </div>
-        </div>
-        <!-- End Reviews -->
-      </section>
-      <section class="flex center" id="contact">
-        <!-- Begin Contact -->
-        <form
-          name="contact"
-          id="form_contact"
-          autocomplete="on"
-          class="card flex border-black bg-dark"
-        >
-          <div class="flex center section-title-container">
-            <h2 class="section-title">Contact</h2>
-          </div>
-          <div class="input-group" id="error_input_wrapper">
-            <div id="form_contact_error"></div>
-          </div>
-          <div class="input-group">
-            <label for="contact_name">Name: </label
-            ><input
-              required
-              type="text"
-              id="contact_name"
-              placeholder="John Doe"
-            />
-          </div>
-          <div class="input-group">
-            <label for="contact_email">Email: </label>
-            <input
-              required
-              id="contact_email"
-              type="email"
-              placeholder="email@email.com"
-            />
-          </div>
-          <div class="input-group">
-            <label for="contact_message">Message: </label
-            ><textarea
-              class="textarea"
-              id="contact_message"
-              placeholder="Hello!"
-              required
-              autocomplete="off"
-            ></textarea>
-          </div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">FreeCodeCamp.org</h3>
+					<ul>
+						<li>
+							<a href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/responsive-web-design"
+								target="blank">
+								Responsive Web Design</a>
+						</li>
+						<li>
+							<a href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/javascript-algorithms-and-data-structures"
+								target="blank">
+								Javascript Algorithms and Data Structures</a>
+						</li>
+					</ul>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">HackerRank.com</h3>
+					<ul>
+						<li>
+							<a href="https://www.hackerrank.com/certificates/53105a0bc555?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate"
+								target="blank">
+								Javascript (Basic) Certificate
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Udemy.com</h3>
+					<ul>
+						<li>
+							<a href="http://ude.my/UC-efedf21b-9efb-46c4-9833-f9179f2c8a2d" target="blank">
+								Javascript: Understanding the Weird Parts</a>
+						</li>
+						<li>
+							<a href="http://ude.my/UC-c0bee547-75d8-4e06-920c-b4fc5c15dca2" target="blank">
+								Learn and Understand NodeJS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Certifications -->
+		</section>
+		<section class="flex center" id="reviews">
+			<!-- Begin Reviews -->
+			<div class="card flex bg-dark border-black">
+				<div class="flex center section-title-container">
+					<h2 class="section-title">Reviews</h2>
+				</div>
 
-          <div class="input-group">
-            <div id="recaptcha-container"></div>
-          </div>
-          <div class="submit-container">
-            <input id="form_contact_submit" type="submit" class="btn" />
-          </div>
-        </form>
-        <!-- End Contact -->
-      </section>
-      <!-- End Main Content -->
-    </main>
-    <!-- Begin Scripts -->
-    <script preload src="firebase_config.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"
-    ></script>
-    <script defer src="/js/pageFactory.min.js" type="module"></script>
-    <script defer src="./js/script.min.js" type="module"></script>
-    <!-- End Scripts -->
-  </body>
+				<div class="section-content-container">
+					<h3 class="section-sub-header">Check back soon!</h3>
+				</div>
+			</div>
+			<!-- End Reviews -->
+		</section>
+		<section class="flex center" id="contact">
+			<!-- Begin Contact -->
+			<form name="contact" id="form_contact" autocomplete="on" class="card flex border-black bg-dark">
+				<div class="flex center section-title-container">
+					<h2 class="section-title">Contact</h2>
+				</div>
+				<div class="input-group" id="error_input_wrapper">
+					<div id="form_contact_error"></div>
+				</div>
+				<div class="input-group">
+					<label for="contact_name">Name: </label><input required type="text" id="contact_name"
+						placeholder="John Doe" />
+				</div>
+				<div class="input-group">
+					<label for="contact_email">Email: </label>
+					<input required id="contact_email" type="email" placeholder="email@email.com" />
+				</div>
+				<div class="input-group">
+					<label for="contact_message">Message: </label><textarea class="textarea" id="contact_message"
+						placeholder="Hello!" required autocomplete="off"></textarea>
+				</div>
+
+				<div class="input-group">
+					<div id="recaptcha-container"></div>
+				</div>
+				<div class="submit-container">
+					<input id="form_contact_submit" type="submit" class="btn" />
+				</div>
+			</form>
+			<!-- End Contact -->
+		</section>
+		<!-- End Main Content -->
+	</main>
+	<!-- Begin Scripts -->
+	<script preload src="firebase_config.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script defer src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+	<script defer src="/js/pageFactory.min.js" type="module"></script>
+	<script defer src="./js/script.min.js" type="module"></script>
+	<!-- End Scripts -->
+</body>
+
 </html>
