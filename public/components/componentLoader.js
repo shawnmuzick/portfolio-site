@@ -10,7 +10,7 @@ function buildComponent(code, id, captionText) {
   component.classList.add("component");
   component.classList.add("flex");
   component.classList.add("bg-dark");
-  component.classList.add("border-purple");
+  component.classList.add("border-black");
   component.classList.add("card");
 
   const componentContainer = document.createElement("div");

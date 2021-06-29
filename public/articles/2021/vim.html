@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Shawn, Matyasovszky, shawn, Matyasovszky, web developer, HTML, html, CSS, css, Javascript, javascript"
+    />
+    <meta
+      name="description"
+      content="Shawn Matyasovszky is a web developer based out of Connecticut, USA. "
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null; this.rel = 'stylesheet'"
+      href="#"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <title>Vim Notes</title>
+  </head>
+  <body>
+    <main id="main" class="flex center bg-main">
+      <h1>Vim Notes, shortcuts, and more</h1>
+      <div class="flex center card bg-dark border-black">
+        <h2>Vim Stuff</h2>
+        <p>:w other_file</p>
+        <p>Use to save the open file with a different file name</p>
+        <p>v gg G J</p>
+        <p>
+          Use to minify the file. Basically: Visual mode, goto top, select to
+          bottom, minify
+        </p>
+        <h2>Motivation</h2>
+        <p>
+          Basically, I'm trying to get myself to use VIM as my main editor,
+          rather than the VS Code vim plugin. Most of the functionality can be
+          pretty easily replicated, and it's incredibly performant. I've run
+          into the issue, though, that copying and pasting text across open VIM
+          instances is a problem, specifically with panes/splits. It turns out
+          it works fine with tabs. Just:
+        </p>
+        <p>:tabnew newFile.html</p>
+        <p>
+          Then use gT to cycle between the tabs. Turns out the same keybinds
+          made their way to the VS Code plugin, which is much nicer than the
+          defaults.
+        </p>
+        <p>
+          I also learned about xTerm 256 colors today and tweaked my VIM theme,
+          originally based on oneDark. Some of the yellows and greys were hard
+          to see, so I adjusted the colors to make the contrast better.
+        </p>
+      </div>
+    </main>
+    <script defer src="/js/pageFactory.min.js" type="module"></script>
+  </body>
+</html>

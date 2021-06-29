@@ -11,6 +11,7 @@
   --border-circle: 50%;
   --header-text-font: "Noto Sans JP", sans-serif;
   --body-text-font: Arial, Helvetica, sans-serif;
+  --shadow-black: 0px 0px 30px 10px black;
 }
 ::-webkit-scrollbar-thumb {
   border: 1px solid black;
@@ -45,14 +46,18 @@
   border: 1px solid var(--divider-color);
   box-shadow: 0px 0px 30px 10px var(--divider-color);
 }
+.border-black {
+  border: 1px solid black;
+  box-shadow: var(--shadow-black);
+}
 .bg-dark {
   background-color: var(--bg-dark);
 }
 .bg-main {
   background-color: var(--main-bg-color);
 }
-.rounded{
-border-radius: 1rem;
+.rounded {
+  border-radius: 1rem;
 }
 /* ------------------------------------------------------------------------- */
 body {
@@ -211,7 +216,6 @@ section {
 .landing-content-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   height: 75vh;
 }
@@ -236,7 +240,8 @@ section {
   align-items: flex-start;
   flex-grow: 1;
   font-size: 1.5rem;
-  border-bottom: solid 1px var(--divider-color);
+  border: none;
+  box-shadow: none;
 }
 .landing-menu .site-title {
   display: none;
@@ -370,7 +375,8 @@ dialog {
 dialog img {
   margin: 1rem;
 }
-dialog img:hover, button img:hover{
+dialog img:hover,
+button img:hover {
   border: none;
   box-shadow: none;
 }
@@ -455,7 +461,6 @@ dialog[open] {
   }
   .landing-content-container {
     flex-direction: column;
-    justify-content: space-around;
   }
   .landing-content-image {
     flex-grow: unset;
@@ -474,6 +479,10 @@ dialog[open] {
   #contact {
     align-items: center;
     padding-top: 100px;
+  }
+  .landing-menu{
+    border: 1px solid black;
+    box-shadow: var(--shadow-black);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -525,6 +534,12 @@ dialog[open] {
   .desktop-site-title {
     display: block;
   }
+  .section-landing {
+    height: 100vh;
+  }
+  .landing-content-container {
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -533,5 +548,18 @@ dialog[open] {
   }
   .landing-content-container {
     height: 100vh;
+  }
+}
+
+pre {
+  color: white;
+  padding: 1rem;
+  font-size: 0.8em;
+  width: 80%;
+  overflow: auto;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding-top: 75px;
   }
 }
