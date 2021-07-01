@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Shawn, Matyasovszky, shawn, Matyasovszky, web developer, HTML, html, CSS, css, Javascript, javascript, c programming, linked list" />
+    <meta name="description" content="This article gives an example of a linked list in the c programming language" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="stylesheet" href="/css/articles/2021/htmlTemplates.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/atom-one-dark.min.css">
+    <title>C Linked List Example</title>
+</head>
+
+<body>
+    <main id="main" class="flex center bg-main">
+        <!-- Begin Main Content -->
+        <h1 id="title">C Linked List Example</h1>
+        <div class="flex center card bg-dark border-black">
+            <h2>Linked Lists in C</h2>
+            <p>Linked lists in C are a great way to store data sets that require frequent inserts, deletions, and
+                changes in length. You might consider a linked list over an array because inserting or deleting elements
+                would involve moving every element in the array after the item of concern.</p>
+            <p>The code sample here demonstrates a linked list in C implemented with structs. It includes some of the
+                standard list operations such as: inserting at a given position, deleting at a given position, and
+                deleting
+                an item by value</p>
+            <p>Note highlightJS is being used for the syntax highlighting</p>
+        </div>
+        <div class="flex center card bg-dark border-black">
+            <h2>Linked List Sample Code</h2>
+            <pre id="code" class="language-cpp">
+            </pre>
+        </div>
+        <!-- End Main Content -->
+    </main>
+    <!-- Begin Scripts -->
+    <script defer src="/js/pageFactory.min.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/highlight.min.js"></script>
+    <script>
+        async function getFile(file) {
+            const data = await (await fetch(`/codeSamples/${file}`)).text();
+            return data;
+        }
+        async function init() {
+            let cLL = await getFile('linkedList.c');
+            let code = document.getElementById('code');
+            // textContent avoids BR rendering issues
+            code.textContent = `${cLL}`;
+            hljs.highlightElement(code);
+        }
+        init();
+    </script>
+    <!-- End Scripts -->
+</body>
+
+</html>
