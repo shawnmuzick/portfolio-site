@@ -217,7 +217,6 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 75vh;
 }
 .landing-content-text {
   display: flex;
@@ -480,7 +479,7 @@ dialog[open] {
     align-items: center;
     padding-top: 100px;
   }
-  .landing-menu{
+  .landing-menu {
     border: 1px solid black;
     box-shadow: var(--shadow-black);
   }

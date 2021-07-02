@@ -1,8 +1,8 @@
 import { orbs } from "./orbs/orbs.min.js";
 import { skeleton } from "./skeleton/skeleton.min.js";
 import { progress } from "./progressBar/progressBar.min.js";
-import {wave} from './wave/wave.min.js';
-
+import { wave } from "./wave/wave.min.js";
+import { buildCodeNode } from "/js/buildCodeNode.min.js";
 const main = document.getElementById("main");
 
 function buildComponent(code, id, captionText) {
@@ -18,8 +18,8 @@ function buildComponent(code, id, captionText) {
   componentContainer.id = id;
 
   const pre = document.createElement("pre");
+  buildCodeNode(pre, code);
   pre.classList.add("code");
-  pre.innerText = code;
   componentContainer.appendChild(pre);
   component.appendChild(componentContainer);
 
