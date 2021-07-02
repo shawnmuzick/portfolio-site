@@ -200,6 +200,10 @@ section {
   transition: 0.5s;
   text-align: left;
 }
+#mobile-nav-expand img {
+  width: 24px;
+  height: 24px;
+}
 .mobile-nav-title {
   font-size: 1rem;
 }
